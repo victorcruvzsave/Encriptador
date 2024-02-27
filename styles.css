@@ -1,0 +1,165 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header h4{
+    font-size: 400%;
+    text-align: center;
+    font-family: "Segoe UI";
+    margin: 0;
+    padding: 0;
+    padding-top: 5%;
+}
+
+.ambosLados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*Lado de entrada de datos*/
+.ladoIzq{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.seccion-1{
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+.seccion-1 p{
+    font-size: 150%;
+    font-family: "Segoe UI";
+    text-align: center;
+}
+.texto-modificar{
+    padding: 5%;
+}
+.texto-modificar form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entradaTexto{
+    width: 100%;
+}
+/*Seccion de botones lado izquierdo*/
+.seccion-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.btn-encriptar{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.btn-encriptar input{
+    width: 90%;
+    padding: 5%;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+}
+.btn-encriptar input:hover{
+    background: #025ab8;
+    color: white;
+}
+.btn-encriptar input:active{
+    background: #184b81;
+    color: rgb(160, 160, 160);
+}
+.btn-desencriptar{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.btn-desencriptar input{
+    width: 90%;
+    padding: 5%;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+}
+.btn-desencriptar input:hover{
+    background: #025ab8;
+    color: white;
+}
+.btn-desencriptar input:active{
+    background: #184b81;
+    color: rgb(160, 160, 160);
+}
+.entradaTexto{
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 2%;
+    padding: 2%;
+    font-family: "Segoe UI";
+    height: 20vh;
+}
+
+/*Lado derecho Salida de datos*/
+.seccion-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 40vh;
+    padding-top: 5%;
+}
+.resultado{
+    width: 100%;
+    height: 20vh;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 2%;
+    padding: 2%;
+    font-family: "Segoe UI";
+    text-align: center;
+}
+.btn-copiar{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 5%;
+}
+.btn-copiar input{
+    width: 100%;
+    padding: 5%;
+    background-color: #04AA6D;
+    border-radius: 5px;
+    border: none;
+}
+.btn-copiar input:hover{
+    background: #047c50;
+    color: white;
+}
+.btn-copiar input:active{
+    background: #185740;
+    color: rgb(160, 160, 160);
+}
+
+ /*
+:is(input,textarea):invalid {
+    background: red;
+    color: #fff;
+  }::placeholder {
+    color: darkred;
+  }*/
+
+  footer{
+    background-color:rgb(190, 61, 38);
+    margin-top: 3%;
+    font-family: "Segoe UI";
+    padding: 2%;
+    font-size: 100%;
+    text-align:end;
+    font-weight: bold;
+    color: white;
+  }

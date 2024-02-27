@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h4>Encriptador</h4>
+    </header>
+
+
+    <section class="ambosLados">
+        <section class="ladoIzq">
+            <section class="seccion-1">
+                <p>Ingesa el texto que se desea alterar</p>
+                <div class="texto-modificar">
+                    <form method="post" action="/send/">
+                        <!--
+                            <input type="text" id="comment" name="username" class="entradaTexto"
+                            placeholder="Ingresa el texto que quiere modificar"
+                            onkeypress="return valideKey(event);">
+                        -->
+                        <textarea type="text" id="comment" name="username" class="entradaTexto"
+                        placeholder="Ingresa el texto que quiere modificar"
+                        onkeypress="return valideKey(event);"></textarea>
+                    </form>
+                </div>
+            </section>
+
+
+
+
+
+
+            <script type="text/javascript">
+                function valideKey(evt){
+                    // code is the decimal ASCII representation of the pressed key.
+                    var code = (evt.which) ? evt.which : evt.keyCode;
+                    
+                    if(code==8) { // backspace.
+                      return true;
+                    } else if(code>=97 && code<=122 || code == 32 || code == 241) { // is a number.
+                      return true;
+                    } else{ // other keys.
+                        window.alert("Solo se pueden ingresar letras minusculas");
+                      return false;
+                    }
+                }
+            </script>
+
+
+
+
+
+
+
+
+        
+        
+            <section class="seccion-2">
+                <div class="btn-encriptar">
+                    <input type="button" class="encriptar" value="Encriptar">
+                </div>
+        
+                <div class="btn-desencriptar">
+                    <input type="button" class="desencriptar" value="Desencriptar">
+                </div>
+            </section>
+        </section>
+    
+    
+        <section class="seccion-3">
+            <div class="resultado">
+                <p class="salidaTexto">Areas de encriptacion</p>
+            </div>
+    
+            <div class="btn-copiar">
+                <input type="button" class="copiar" value="Copiar">
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        Victor Cruz
+        <br>
+        Challenge Oracle
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
